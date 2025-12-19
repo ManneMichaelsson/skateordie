@@ -13,6 +13,7 @@
     color: cornflowerblue;
     font-size: 4vw;
     line-height: 1;
+    width: 121%;
 }
 
 .navbarstyle ul {
@@ -35,4 +36,14 @@
     transform: scale(1.1);
     background-color: aliceblue;
     color: black;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.btn_login{
+    margin-left: auto;
 }

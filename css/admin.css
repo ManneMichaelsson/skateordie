@@ -1,0 +1,25 @@
+
+.addClothing{
+    border: 2px solid red;
+    width: fit-content;
+    padding: 2%;
+    display: flex;
+}
+.addCategory{
+    display: flex;
+    border: 2px solid blue;
+    width: fit-content;
+    padding: 2%;
+}
+.pageBox{
+    display: flex;
+    flex-direction: row;
+    gap: 5%
+}
+
+.productPreview img {
+    display: block;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}

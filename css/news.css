@@ -5,26 +5,10 @@ body {
     color: white;
 }
 
-/* HEADER */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px 40px;
-}
-
 .logo {
     font-size: 55px;
     font-family: Impact, sans-serif;
     color: #2156f3;
-}
-
-nav a {
-    margin: 0 20px;
-    text-decoration: none;
-    color: white;
-    font-size: 22px;
-    letter-spacing: 2px;
 }
 
 nav .sale {

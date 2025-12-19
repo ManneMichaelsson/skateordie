@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skate Or Die</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <script src="../js/javaScript.js" defer></script>
+    <script src="../js/adminJs.js" defer></script>
+</head>
+<body>
+<div id="navbar"></div>
+
+  <script>
+    fetch('nav.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+      });
+  </script>
+
+    <h1>
+        Add product
+    </h1>
+
+    <div class="pageBox">
+        <div class="addCategory">
+            <form id="categoryForm">
+                <label>New Category:</label><br>
+                <input type="text" id="categoryInput" required><br><br>
+                <button type="submit">Skicka</button>
+            </form>
+        </div>
+
+        <div class="addClothing">
+    <form id="productForm">
+        <label>Product name:</label><br>
+        <input type="text" id="productName" required><br><br>
+
+        <label>Description:</label><br>
+        <textarea id="description"></textarea><br><br>
+
+        <select id="categorySelect" required>
+            <option value="">Välj kategori</option>
+        </select><br><br>
+
+        <label>Välj bild:</label><br>
+        <input type="file" id="productImage" accept="image/*"><br><br>
+
+        <button type="submit">Update preview</button>
+    </form>
+</div>
+
+        <div class="productPreview">
+            <h2>Preview of product: </h2>
+        </div>
+    </div>
+    
+</body>
+</html>
