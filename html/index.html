@@ -8,17 +8,36 @@
     <script src="../js/javaScript.js" defer></script>
 </head>
 <body>
+
     <div id="navbar"></div>
 
-  <script>
-    fetch('nav.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('navbar').innerHTML = data;
-      });
-  </script>
-  <div class="midElement">
-    <img src="/assets/images/skateOrDie-midelement.jpg" alt="skateOrDie-midelement" width="300">
-  </div>
+    <script>
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            });
+    </script>
+
+    <!-- HERO START -->
+    <main class="hero">
+
+        <div class="discount-badge">
+            20%<br>OFF
+        </div>
+
+        <h1 class="hero-title">
+            OWN THE<br>STREETS
+        </h1>
+
+        <p class="hero-text">
+            Premium gear for those who live to ride. No limits, no rules.
+        </p>
+
+        <a href="categories.html" class="cta-btn">SHOP NOW</a>
+
+    </main>
+    <!-- HERO END -->
+
 </body>
 </html>

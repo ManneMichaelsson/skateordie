@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 @font-face {
     font-family: 'Bebas Neue';
     src: url('../assets/fonts/Bebasneue/BebasNeue-Regular.ttf') format('truetype');
@@ -8,6 +15,9 @@
 body {
     background-color: black;
     color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
@@ -86,4 +96,63 @@ body {
 .card img {
     width: 100%;
     border-radius: 10px;
+}
+
+/* HERO / STARTSIDA */
+.hero {
+    height: calc(100vh - 100px); /* samma höjd som navbar */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+
+.hero-title {
+    font-size: 7rem;
+    font-weight: 900;
+    line-height: 0.9;
+    color: transparent;
+    -webkit-text-stroke: 3px #9CF000;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.hero-text {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+    margin-bottom: 3rem;
+    max-width: 600px;
+}
+
+/* CTA */
+.cta-btn {
+    background-color: #9CF000;
+    color: #000;
+    padding: 1rem 3rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cta-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(156, 240, 0, 0.4);
+}
+
+/* 20% OFF BADGE */
+.discount-badge {
+    position: absolute;
+    top: 40px;
+    right: 80px;
+    background-color: #9CF000;
+    color: #000;
+    font-weight: bold;
+    padding: 1rem 1.2rem;
+    text-align: center;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
 }

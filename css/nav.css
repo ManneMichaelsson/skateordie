@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;       /* vertikal centrering */
     gap: 2%;                 /* avstånd mellan nav och header */
-    height: auto;             /* höjd på nav-baren */
+    height: 100px;             /* höjd på nav-baren */
     padding: 0 2%;
     background-color: black;
     border-bottom: 2px solid white; /* <--- här skapar vi strecket */
